@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="author" content="Victor Lindwall">
+	<meta name="description" content="Välkommen till LiU Formula Student. Vi tävlar i världens största produktutvecklingstävling för studenter!" />
+	<meta name="keywords" content="Victor Lindwall, Civilingenjör, Student, Linköpings Universitet, Liu, R&D, Maskinteknik, Produktutveckling, Design, Linköping, Formula Student, Sverige, Produktutvecklare, CAD, Solidworks, CREO, Motorsport"/>
+	<meta name="robots" content="index, follow">
+	<meta property="og:url"                content="http://www.liuformulastudent.se"/>
+	<meta property="og:description"        content="Hej! Välkommen till LiU Formula Student. Klicka här för att få veta mer!" />
+	
+	<title> Home | LiU Formula Student</title>
+	
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="examination2.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+	<nav id="navbar">		
+		<div class="col-1 row">
+			<a class="brand-logo" href="http://www.liuformulastudent.se"></a>
+		</div>
+		<div class="col-11">
+			<ul class="topnav" id="myTopnav">
+				<li><a class="active" href="index.html">Home</a></li>
+				<li><a href="about-us.html">About Us </a></li>
+				<li><a href="#sponsors"onclick="myFunction()">Sponsors</a></li>
+				<li class="dropdown">
+				<a href="cars.html" class="dropbtn">Cars</a>
+					<div class="dropdown-content row">
+						<a href="cars.html#ER16" onclick="myFunction()">ER16</a>
+						<a href="cars.html#ER15" onclick="myFunction()">ER15</a>
+						<a href="cars.html#ER14" onclick="myFunction()">ER14</a>
+						<a href="cars.html#ER13" onclick="myFunction()">ER13</a>
+						<a href="cars.html#ER01" onclick="myFunction()">ERIC-01</a>
+					</div>
+				</li>
+				<li class="right"><a href="#contact" onclick="myFunction()">Contact</a></li>
+				<li class="icon">
+					<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
+				</ul>
+			</div>	
+		</nav>
+
+<!-- SLIDER --> 
+
+		<div id="slider">
+			<div class="col-12">
+				<ul class="slides">
+					<input type="radio" name="radio-btn" id="img-1" checked />
+					<li class="slide-container">
+						<div class="slide">
+							<h1><span>The Formula Student team from Linköping University</span></h1>
+							<img src="bilder/liufs_slider1.jpg" alt="Bild"/>
+						</div>
+						<div class="nav">
+							<label for="img-3" class="prev">&#x2039;</label>
+							<label for="img-2" class="next">&#x203a;</label>
+						</div>
+					</li>
+
+					<input type="radio" name="radio-btn" id="img-2" />
+					<li class="slide-container">
+						<div class="slide">
+							<h1><span>Building Race-Cars Since 2011 </span></h1>
+							<img src="bilder/liufs_slider2.png" alt="Bild"/>
+						</div>
+						<div class="nav">
+							<label for="img-1" class="prev">&#x2039;</label>
+							<label for="img-3" class="next">&#x203a;</label>
+						</div>
+					</li>
+
+					<input type="radio" name="radio-btn" id="img-3" />
+					<li class="slide-container">
+						<div class="slide">
+							<h1><span> 550+ Teams Worldwide</span><span>15.000+ Students</span></h1>
+							<img src="bilder/liufs_slider3.jpg" alt="Bild"/>
+						</div>
+						<div class="nav">
+							<label for="img-2" class="prev">&#x2039;</label>
+							<label for="img-1" class="next">&#x203a;</label>
+						</div>
+					</li>				
+					<li class="nav-dots">
+						<label for="img-1" class="nav-dot" id="img-dot-1"></label>
+						<label for="img-2" class="nav-dot" id="img-dot-2"></label>
+						<label for="img-3" class="nav-dot" id="img-dot-3"></label>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+<!-- BANNER -->
+
+		<div id="banner">
+			<h1>Engineers with <span><strong>Great</strong></span> commitment</h1>
+		</div>
+
+<!-- INFO -->		
+
+	<div id="info" class="parallax">
+		<div class="row">
+					
+
+			<div class="col-4">
+				<h2>Theory in practice!</h2>
+				<p>Each year a new team of students take on the challenge to develop, design, build and race a formula race car. In the process we utilize all our knowledge acquired at the university in addition to develop a vast variety of skills. Read more about how our members make the transition from students to engineers through a year in our magazine!</p>
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- SPONSORS -->
+
+		<div id="sponsors">
+			<div class="row">
+				<div class="col-12">
+					<h1>Sponsored By:</h1>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-2">
+					<a href="http://www.ptc.com"><img src="bilder/spons1.png" alt="Bild"></a>
+				</div>
+				<div class="col-2">
+					<a href="http://www.ahlsell.se"><img src="bilder/spons2.png" alt="Bild"></a>
+				</div>
+				<div class="col-2">
+					<a href="http://www.skf.se"><img src="bilder/skf.png" alt="Bild"></a>
+				</div>
+				<div class="col-2">
+					<a href="http://www.avl.se"><img src="bilder/avl.jpg" alt="Bild"></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-2">
+					<a href="http://www.altair.com"><img src="bilder/altair.jpg" alt="Bild"></a>
+				</div>
+				<div class="col-2">
+					<a href="http://www.exel.se"><img src="bilder/exel.png" alt="Bild"></a>
+				</div>
+				<div class="col-2">
+					<a href="http://www.me-racing.se"><img src="bilder/mers.jpg" alt="Bild"></a>
+				</div>
+				<div class="col-2">
+					<a href="http://www.ricardo.com"><img src="bilder/ricardo.png" alt="Bild"></a>
+				</div>	
+			</div>	
+
+			<div class="row">
+				<div class="col-2">
+					<a href="http://www.ahlsell.se"><img src="bilder/spons2.png" alt="Bild"></a>
+				</div>
+				<div class="col-2">
+					<a href="http://www.ptc.com"><img src="bilder/spons1.png" alt="Bild"></a>
+				</div>
+				<div class="col-2">
+					<a href="http://www.avl.se"><img src="bilder/avl.jpg" alt="Bild"></a>
+				</div>
+				<div class="col-2">
+					<a href="http://www.skf.se"><img src="bilder/skf.png" alt="Bild"></a>
+				</div>	
+			</div>	
+
+			<div class="row">
+				<div class="col-2">
+					<a href="http://www.ricardo.com"><img src="bilder/ricardo.png" alt="Bild"></a>
+				</div>
+				<div class="col-2">
+					<a href="http://www.me-racing.se"><img src="bilder/mers.jpg" alt="Bild"></a>
+				</div>
+				<div class="col-2">
+					<a href="http://www.exel.se"><img src="bilder/exel.png" alt="Bild"></a>
+				</div>
+				<div class="col-2">
+					<a href="http://www.altair.com"><img src="bilder/altair.jpg" alt="Bild"></a>
+				</div>	
+			</div>	
+
+		</div>
+
+		<div id="contact">
+
+			<div class="row">
+				<div class="col-2">
+					<img src="bilder/logo.png" alt="Bild">
+				</div>
+
+				<div class="col-4">
+					<h3><span><strong>GET</strong></span> IN TOUCH</h3>
+					<p>If you have any question please do not hesitate to contact us on our email or on our facebook page.</p>
+					<h3><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Head Office</h3>
+					<p>Linköping University <br> Liu Formula Student <br> IEI/Maskinkonstruktion <br> 581 83 Linköping <br>SWEDEN</p>
+				</div>
+
+				<div class="col-4">
+					<h3><span><strong>QUICK</strong></span> INFO</h3>
+					<ul class="list-arrow">
+						<li>LiU Formula Student</li>
+						<li>Non-profit student association at Linköpings University. </li>
+						<li>50 engineering students</li>
+						<li>Competing in Formula SAE</li>
+						<li>Annually develops and designs a competition vehicle</li>
+					</ul>
+				</div>
+
+				<div id="lankar" class="col-2">
+						<h3><a href="https://www.facebook.com/LiUFormulaStudent/"><i class="fa fa-facebook-square fa-fw" aria-hidden="true" style="font-size:4vh; border-bottom-color: #ffffff; vertical-align: middle; "></i></a>acebook</h3><br><br>
+						<h3><a href="https://www.instagram.com/liuformulastudent/"><i class="fa fa-instagram fa-fw" aria-hidden="true" style="font-size:4vh; vertical-align: middle;"></i></a>Instagram</h3><br><br>
+						<h3><a href="https://www.youtube.com/user/ELiTHRacing"><i class="fa fa-youtube fa-fw" aria-hidden="true" style="font-size: 4vh; vertical-align: middle;"></i></a>Youtube</h3>
+
+
+
+				</div>
+				
+
+				
+
+				
+
+			</div>
+		</div>
+
+<!-- SCRIPT, La bara in för att testa lite Java/Jquery-->
+
+		<script type="text/javascript">
+			function myFunction() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") {
+					x.className += " responsive";
+				} else {
+					x.className = "topnav";
+				}
+			}
+		</script>
+
+		<script>
+			$(function() {
+ 			$('a[href*="#"]:not([href="#"])').click(function() {
+   			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+     		var target = $(this.hash);
+    		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    		if (target.length) {
+    		$('html, body').animate({
+      		scrollTop: target.offset().top
+     		}, 1000);
+     		return false;
+   		   }
+  		  }
+  		});
+		});
+		</script>
+
+
+	</body>
+	</html>
